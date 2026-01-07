@@ -1,0 +1,777 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'SfHambakneun';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cafe24Decobox';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/Cafe24Decobox.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HsBombaram30';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Thin.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HsBombaram30';
+    src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KboDiamondGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KboDiamondGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KboDiamondGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@keyframes shake-y {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-5px);
+    }
+
+    /* 위로 5px 이동 */
+    75% {
+        transform: translateY(5px);
+    }
+
+    /* 아래로 5px 이동 */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url(../images/cursor.png), auto;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'HsBombaram30';
+}
+
+
+header {
+    width: 100%;
+    height: 160px;
+    /* 이미지와 메뉴를 모두 포함할 높이 */
+    top: 0;
+    left: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    /* 세로로 배치 */
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+header img {
+    height: 70%;
+    padding: 20px;
+}
+
+header ul {
+    display: flex;
+    height: 30%;
+    width: 100%;
+    justify-content: center;
+    /* 메뉴 항목들을 가로로 중앙 정렬 */
+    padding-left: 50px;
+    padding-right: 50px;
+    list-style: none;
+}
+
+header ul li {
+    display: flex;
+    width: 20%;
+    /* 각 메뉴 항목의 크기 */
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    /* 배경 색상 */
+    border: 1px solid white;
+    color: white;
+    /* 글자 색상 */
+    padding: 10px;
+    text-align: center;
+}
+
+header ul li:hover {
+    color: yellow;
+    background-color: #000;
+}
+
+.header2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(../images/bgimg6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 21 / 9;
+    /* 배경 이미지 비율에 맞게 높이가 자동 조정 */
+}
+
+.header2 img {
+    animation: shake-y 2s infinite ease-in-out;
+    padding-bottom: 20px;
+}
+
+.title h1:nth-child(1) {
+    font-size: 64px;
+    color: white;
+    -webkit-text-stroke: 2px #000;
+    position: absolute;
+    /* 상대 위치 설정 */
+    right: 50px;
+    /* 오른쪽으로 50px 이동 */
+    top: 200px;
+    font-family: 'KboDiamondGothic';
+    text-shadow: 5px 5px 5px black;
+    margin-left: 10%;
+}
+
+.title h1:nth-child(2) {
+    font-size: 48px;
+    color: #0095FF;
+    -webkit-text-stroke: 2px #000;
+    position: absolute;
+    /* 상대 위치 설정 */
+    right: 50px;
+    /* 오른쪽으로 50px 이동 */
+    top: 270px;
+    font-family: 'KboDiamondGothic';
+    text-shadow: 5px 5px 5px black;
+    margin-left: 25%;
+}
+
+.title h1:nth-child(3) {
+    font-size: 32px;
+    position: absolute;
+    /* 상대 위치 설정 */
+    right: 50px;
+    /* 오른쪽으로 50px 이동 */
+    top: 350px;
+    font-family: 'KboDiamondGothic';
+    color: beige;
+    -webkit-text-stroke: 1px #000;
+    text-shadow: 5px 5px 5px black;
+    margin-left: 25%;
+}
+
+.item h1 {
+    margin-left: 100px;
+    /* 필요한 경우, h1의 위치를 조정 */
+    padding-top: 100px;
+}
+
+#Profile {
+    width: 100%;
+    background-color: white;
+    aspect-ratio: 21 / 9;
+    background-image: url(../images/background.png);
+}
+
+#Profile h1 {
+    color: yellow;
+    font-family: 'KboDiamondGothic';
+}
+
+.filewrap {
+    padding-top: 72px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.prowrap {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    /* 가로로 가운데 정렬 */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.prowrap p {
+    color: white;
+}
+
+.prowrap1 {
+    width: 400px;
+    gap: 10px;
+    display: flex;
+}
+
+.prowrap1 p:nth-child(1) {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.prowrap1 p:nth-child(2) {
+    font-size: 24px;
+}
+
+#Academic {
+    background-image: url(../images/backgrounduniver.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 21 / 9;
+}
+
+#Academic h1 {
+    color: white;
+    font-family: 'KboDiamondGothic';
+}
+
+.recowrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.recowrap img {
+    width: 20%;
+    height: auto;
+}
+
+.recowrap p:nth-child(1) {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.recowrap p:nth-child(2) {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.recowrap p:nth-child(3) {
+    color: white;
+    font-size: 24px;
+}
+
+.records {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+#Experiences {
+    width: 100%;
+    background-color: beige;
+}
+
+#Experiences h1 {
+    font-family: 'KboDiamondGothic';
+}
+
+.imgwrap {
+    width: calc(100% - 200px);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    aspect-ratio: 21 / 9;
+    overflow: hidden;
+}
+.imgwrap img {
+    width: calc(100% / 6);
+    height: auto;
+}
+.imgwrap img:hover {
+    animation: shake-y 2s infinite ease-in-out;
+}
+
+#Volunteer {
+    background-image: url(../images/background7.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+#Volunteer h1 {
+    font-family: 'KboDiamondGothic';
+    color: #F6C6A1;
+    padding-bottom: 25px;
+}
+
+.down-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 세로로도 가운데 정렬 */
+    padding: 30px;
+    animation: shake-y 2s infinite ease-in-out;
+}
+
+.info-table2 {
+    width: 100%;
+    max-width: 760px;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.info-table2 th {
+    width: 30%;
+    font-family: 'KboDiamondGothic';
+    text-align: center;
+    /* 왼쪽 정렬 */
+    background-color: beige;
+    /* 배경색 */
+    padding: 10px;
+    /* 패딩 */
+    font-weight: bold;
+    /* 굵은 글씨 */
+    border: 1px solid black;
+}
+
+.info-table2 td {
+    width: 70%;
+    padding: 10px;
+    /* 패딩 */
+    text-align: left;
+    /* 왼쪽 정렬 */
+    border: 1px solid black;
+    /* 하단 경계선 */
+    background-color: white;
+}
+
+.info-table2 th,
+.info-table2 td {
+    font-size: 18px;
+}
+
+#Projects {
+    background-image: url(../images/background1.png);
+    width: 100%;
+    background-position: center;
+    padding-bottom: 200px;
+}
+
+#Projects h1 {
+    font-family: 'KboDiamondGothic';
+}
+
+#Projects h3 {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+.pname {
+    margin-top: 75px;
+    display: flex;
+    margin-left: 100px;
+    gap: 10px;
+    font-family: 'KboDiamondGothic';
+}
+
+.videowrap {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    justify-content: center;
+    /* 가로로 가운데 정렬 */
+    display: flex;
+    gap: 100px;
+    overflow: hidden;
+}
+
+.videowrap p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.game-table1 {
+    margin-left: 300px;
+    /* 왼쪽 마진 */
+    margin-right: 300px;
+    /* 오른쪽 마진 */
+    width: calc(100% - 600px);
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.game-table1 th {
+    width: 30%;
+    text-align: center;
+    /* 왼쪽 정렬 */
+    background-color: lightgoldenrodyellow;
+    /* 배경색 */
+    padding: 5px;
+    /* 패딩 */
+    font-weight: bold;
+    /* 굵은 글씨 */
+    border: 1px solid black;
+}
+
+.game-table1 td {
+    width: 70%;
+    padding: 5px;
+    /* 패딩 */
+    text-align: left;
+    /* 왼쪽 정렬 */
+    border: 1px solid black;
+    /* 하단 경계선 */
+    background-color: white;
+}
+
+.game-table1 th,
+.game-table td {
+    font-size: 18px;
+    list-style: none;
+}
+
+.game-table1 a {
+    text-decoration: none;
+}
+
+.game-table1 ul {
+    list-style: none;
+}
+
+
+.desc {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-weight: bold;
+}
+
+.desc1 {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.desc1 a {
+    text-decoration: none;
+}
+
+.desc2 {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 25px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.desc3 {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.desc3 a {
+    text-decoration: none;
+}
+
+.f349 {
+    display: flex;
+    /* 부모 요소를 flex 컨테이너로 설정 */
+    justify-content: center;
+    margin-left: 300px;
+    /* 왼쪽 마진 */
+    margin-right: 300px;
+    /* 오른쪽 마진 */
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: calc(100% - 600px);
+    height: auto;
+}
+
+.game-table {
+    margin-left: 300px;
+    /* 왼쪽 마진 */
+    margin-right: 300px;
+    /* 오른쪽 마진 */
+    width: calc(100% - 600px);
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.game-table th {
+    width: 30%;
+    text-align: center;
+    /* 왼쪽 정렬 */
+    background-color: lightgoldenrodyellow;
+    /* 배경색 */
+    padding: 5px;
+    /* 패딩 */
+    font-weight: bold;
+    /* 굵은 글씨 */
+    border: 1px solid black;
+}
+
+.game-table td {
+    width: 70%;
+    padding: 5px;
+    /* 패딩 */
+    text-align: left;
+    /* 왼쪽 정렬 */
+    border: 1px solid black;
+    /* 하단 경계선 */
+    background-color: white;
+}
+
+.game-table th,
+.game-table td {
+    font-size: 18px;
+}
+
+.game-table a {
+    text-decoration: none;
+    color: #0095FF;
+}
+
+.mySwiper {
+    margin-top: 25px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    /* 가로로 가운데 정렬 */
+    align-items: center;
+    /* 세로로 가운데 정렬 */
+    height: 100%;
+    /* 슬라이드 높이를 100%로 설정 */
+}
+
+.swiper-slide img {
+    max-width: 100%;
+    /* 이미지 가로 크기를 슬라이드에 맞게 최대화 */
+    height: auto;
+    /* 이미지 비율을 유지 */
+}
+
+.swiper-button-next {
+    background: url(../images/button-next.png) no-repeat;
+    background-size: 50% auto;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+}
+
+.swiper-button-prev {
+    background: url(../images/button-prev.png) no-repeat;
+    background-size: 50% auto;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+
+.qa {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 10px;
+    list-style: none;
+}
+
+.qa:first-of-type .answer img {
+    border: none;
+}
+
+.answer {
+    display: none;
+}
+
+.answer a {
+    text-decoration: none;
+}
+
+.answer img {
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.question {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    height: 120px;
+}
+
+footer p {
+    color: white;
+}
+
+.lastwrap {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* 절대 위치로 설정 */
+    top: 50%;
+    /* 세로 중앙 정렬 */
+    left: 50%;
+    /* 가로 중앙 정렬 */
+    transform: translate(-50%, -50%);
+    /* 정확한 중앙 정렬을 위해 이동 */
+}
+.lastwrap a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.answrap1 {
+    display: flex;
+    margin-right: 100px;
+    margin-left: 100px;
+    font-weight: bold;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    width: calc(100% - 200px);
+    border: 1px solid black;
+    background-color: #240952;
+}
+
+.answrap1 img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    /* 비율 유지하며 채우기 */
+    border: 1px solid #000;
+}
+
+.answrap1 a {
+    text-decoration: none;
+}
+.answrap1 .answer img {
+    width: 100%; /* 원하는 크기 비율로 변경 */
+    height: 100%;
+}
+
+.logowrap {
+    display: flex;
+    width: calc(100% - 200px);
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 10px;
+}
+.logowrap img {
+    width: 50%;
+}
+
+.gotop {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    background-color: #333;
+    display: none;
+    z-index: 100;
+}
+
+.gotop span {
+    position: absolute;
+    top: 17px;
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: rotate(45deg);
+}
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.tg a {
+    text-decoration: none;
+}
+
+.tg td {
+    width: 70%;
+    border-color: black;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.tg th {
+    width: 30%;
+    border-color: black;
+    background-color: lightgoldenrodyellow;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+}

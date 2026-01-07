@@ -1,0 +1,657 @@
+@media screen and (max-width:1440px) {
+
+    .filewrap {
+        padding-top: 25px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .prowrap {
+        gap: 200px;
+        padding-bottom: 100px;
+    }
+
+    .prowrap1 {
+        width: 280px;
+        gap: 10px;
+    }
+
+    .prowrap1 img {
+        width: 59px;
+        height: 59px;
+    }
+
+    .prowrap1 p:nth-child(1) {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .prowrap1 p:nth-child(2) {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #Experiences {
+        width: 100%;
+        background-color: beige;
+    }
+
+    .imgwrap {
+        width: calc(100% - 200px);
+        display: flex;
+        gap: 10px;
+        margin-left: 100px;
+        margin-right: 100px;
+        padding-top: 25px;
+        overflow: visible;
+    }
+
+    .imgwrap img {
+        width: calc(100% / 6);
+        height: auto;
+    }
+
+    .game-table1 {
+        margin-left: 100px;
+        /* 왼쪽 마진 */
+        margin-right: 100px;
+        /* 오른쪽 마진 */
+        width: calc(100% - 200px);
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+    }
+
+    .f349 {
+        display: flex;
+        /* 부모 요소를 flex 컨테이너로 설정 */
+        justify-content: center;
+        margin-left: 100px;
+        /* 왼쪽 마진 */
+        margin-right: 100px;
+        /* 오른쪽 마진 */
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: calc(100% - 200px);
+        height: auto;
+    }
+
+    .desc1 {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .game-table {
+        margin-left: 100px;
+        /* 왼쪽 마진 */
+        margin-right: 100px;
+        /* 오른쪽 마진 */
+        width: calc(100% - 200px);
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+    }
+
+    .recowrap {
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .header2 {
+        width: 100%
+    }
+
+    .title h1:nth-child(1) {
+        font-size: 32px;
+        -webkit-text-stroke: 1px #000;
+        position: absolute;
+        /* 상대 위치 설정 */
+        right: 50px;
+        /* 오른쪽으로 50px 이동 */
+        top: 200px;
+        font-family: 'KboDiamondGothic';
+    }
+
+    .title h1:nth-child(2) {
+        font-size: 24px;
+        -webkit-text-stroke: 1px #000;
+        position: absolute;
+        /* 상대 위치 설정 */
+        right: 50px;
+        /* 오른쪽으로 50px 이동 */
+        top: 240px;
+    }
+
+    .title h1:nth-child(3) {
+        font-size: 20px;
+        position: absolute;
+        /* 상대 위치 설정 */
+        right: 50px;
+        /* 오른쪽으로 50px 이동 */
+        top: 285px;
+        -webkit-text-stroke: 1px #000;
+    }
+
+    .prowrap {
+        width: 100%;
+        gap: 100px;
+        padding-top: 0px;
+        padding-bottom: 50px;
+        justify-content: center;
+    }
+
+    .prowrap1 {
+        width: 300px;
+    }
+
+    .prowrap1 img {
+        width: 59px;
+        height: 59px;
+    }
+
+    .prowrap1 p:nth-child(1) {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .prowrap1 p:nth-child(2) {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .recowrap p:nth-child(1) {
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .recowrap p:nth-child(2) {
+        color: white;
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .recowrap p:nth-child(3) {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    #Experiences {
+        width: 100%;
+        background-color: beige;
+    }
+
+    #Experiences h1 {
+        font-family: 'KboDiamondGothic';
+    }
+
+    .imgwrap {
+        display: flex;
+        gap: 10px;
+        margin-left: 100px;
+        margin-right: 100px;
+        padding-top: 25px;
+    }
+
+    .videowrap {
+        gap: 100px;
+        /* 화면이 작아지면 간격을 줄여서 공간 확보 */
+        flex-direction: row;
+        /* 세로 방향으로 아이템 배치 */
+        align-items: center;
+        /* 세로 방향 정렬 */
+        margin-bottom: 50px;
+    }
+
+    .videowrap iframe {
+        width: 100%;
+        /* 100%로 크기를 조정해서 화면에 맞게끔 */
+        max-width: 500px;
+        /* 최대 너비 설정 */
+        height: auto;
+        /* 자동 높이로 조정 */
+    }
+
+    .game-table1 {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .f349 {
+        margin-left: 100px;
+        margin-right: 100px;
+        width: calc(100% - 200px);
+    }
+}
+
+@media screen and (max-width:768px) {
+    header ul {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .title h1:nth-child(1) {
+        font-size: 32px;
+        position: absolute;
+        /* 상대 위치 설정 */
+        right: 50px;
+        /* 오른쪽으로 50px 이동 */
+        top: 200px;
+        font-family: 'KboDiamondGothic';
+    }
+
+    .title h1:nth-child(2) {
+        font-size: 24px;
+        color: #0095FF;
+        position: absolute;
+        /* 상대 위치 설정 */
+        right: 50px;
+        /* 오른쪽으로 50px 이동 */
+        top: 235px;
+        font-family: 'KboDiamondGothic';
+    }
+
+    .title h1:nth-child(3) {
+        font-size: 18px;
+        position: absolute;
+        right: 50px;
+        top: 280px;
+        -webkit-text-stroke: 0.5px #000;
+    }
+
+    .header2 img {
+        width: 59.5px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .item h1 {
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+
+    .prowrap {
+        width: 100%;
+        gap: 25px;
+        padding-top: 0px;
+        padding-bottom: 50px;
+        justify-content: center;
+    }
+
+    .prowrap1 {
+        width: 300px;
+    }
+
+    #Academic {
+        aspect-ratio: 16 / 9;
+    }
+
+    .recowrap p:nth-child(1) {
+        font-size: 32px;
+    }
+
+    .recowrap p:nth-child(2) {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .recowrap p:nth-child(3) {
+        font-size: 16px;
+    }
+
+    .imgwrap {
+        display: grid;
+        /* Grid 레이아웃 사용 */
+        grid-template-columns: repeat(3, 1fr);
+        /* 3개의 열을 동일한 너비로 설정 */
+        grid-template-rows: repeat(2, auto);
+        /* 2개의 행을 자동 높이로 설정 */
+        gap: 10px;
+        /* 이미지 간 간격 */
+        padding-bottom: 25px;
+        aspect-ratio: 4 / 3;
+    }
+
+    .imgwrap img {
+        width: 100%;
+        /* 각 이미지가 부모 요소에 맞게 크기 조정 */
+        height: auto;
+        /* 비율을 유지하며 높이 자동 조정 */
+        object-fit: cover;
+        /* 이미지를 잘라서 박스에 맞게 크기 조정 */
+    }
+
+    .f349 {
+        display: flex;
+        /* 부모 요소를 flex 컨테이너로 설정 */
+        justify-content: center;
+        margin-left: 5%;
+        /* 왼쪽 마진 */
+        margin-right: 5%;
+        /* 오른쪽 마진 */
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: calc(100% - 10%);
+        height: auto;
+    }
+
+    .desc1 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .game-table1 {
+        margin-left: 5%;
+        /* 왼쪽 마진 */
+        margin-right: 5%;
+        /* 오른쪽 마진 */
+        width: calc(100% - 10%);
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+    }
+
+    .game-table {
+        margin-left: 5%;
+        /* 왼쪽 마진 */
+        margin-right: 5%;
+        /* 오른쪽 마진 */
+        width: calc(100% - 10%);
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+    }
+
+    .answrap1 {
+        margin-left: 5%;
+        /* 왼쪽 마진 */
+        margin-right: 5%;
+        /* 오른쪽 마진 */
+        width: calc(100% - 10%);
+        display: block;
+    }
+
+    .answrap1 img:nth-child(1) {
+        width: 100%;
+    }
+
+    .answrap1 table {
+        width: 100%;
+    }
+
+    #Experiences .desc3 {
+        margin-left: 75px;
+    }
+
+    .pname {
+        margin-top: 50px;
+        display: flex;
+        margin-left: 25px;
+        gap: 10px;
+        font-family: 'KboDiamondGothic';
+    }
+
+    #Projects h3 {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .videowrap {
+        gap: 20px;
+        /* 화면이 작아지면 간격을 줄여서 공간 확보 */
+        flex-direction: row;
+        /* 세로 방향으로 아이템 배치 */
+        align-items: center;
+        /* 세로 방향 정렬 */
+    }
+
+    .videowrap iframe {
+        width: 100%;
+        /* 100%로 크기를 조정해서 화면에 맞게끔 */
+        max-width: 500px;
+        /* 최대 너비 설정 */
+        height: auto;
+        /* 자동 높이로 조정 */
+    }
+
+    .qa {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .desc .desc1 {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .desc3 {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    #Projects p {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .logowrap {
+        margin-right: 25px;
+        margin-left: 25px;
+        width: calc(100% - 50px);
+    }
+
+    .gotop {
+        display: none;
+    }
+
+    .lastwrap p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    header ul li {
+        font-size: 13px;
+    }
+
+    .header2 img {
+        padding-bottom: 10px;
+        width: 10%;
+        height: auto;
+    }
+
+    .title h1:nth-child(1) {
+        font-size: 24px;
+        position: absolute;
+        /* 상대 위치 설정 */
+        right: 25px;
+        /* 오른쪽으로 50px 이동 */
+        top: 180px;
+        font-family: 'KboDiamondGothic';
+    }
+
+    .title h1:nth-child(2) {
+        font-size: 20px;
+        color: #0095FF;
+        position: absolute;
+        /* 상대 위치 설정 */
+        right: 25px;
+        /* 오른쪽으로 50px 이동 */
+        top: 205px;
+        font-family: 'KboDiamondGothic';
+    }
+
+    .title h1:nth-child(3) {
+        font-size: 15px;
+        position: absolute;
+        right: 25px;
+        top: 240px;
+        -webkit-text-stroke: 0.5px #000;
+        margin-left: 25%;
+    }
+
+    .prowrap {
+        display: block;
+        padding: 0;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+
+    .prowrap1 {
+        padding: 10px;
+    }
+
+    .prowrap1 p:nth-child(1) {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .prowrap1 p:nth-child(2) {
+        font-size: 12px;
+    }
+
+    .item h1 {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 100px;
+        font-size: 28px;
+    }
+
+    .recowrap {
+        gap: 10px;
+    }
+
+    .recowrap img {
+        width: 25%;
+        height: auto;
+    }
+
+    .recowrap p:nth-child(1) {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .recowrap p:nth-child(2) {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .recowrap p:nth-child(3) {
+        color: white;
+        font-size: 16px;
+    }
+
+    .pname {
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+        gap: 10px;
+        font-size: 22px;
+    }
+
+    .pname h2 {
+        font-size: 18px;
+    }
+
+    #Experiences .desc3 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .game-table th,
+    td {
+        font-size: 16px;
+    }
+
+    .game-table1 th,
+    td {
+        font-size: 16px;
+    }
+
+    .lastwrap p {
+        font-size: 12px;
+    }
+    .gotop {
+        bottom: 100px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    header ul li a {
+        font-size: 12px;
+    }
+
+    .title h1:nth-child(1) {
+        font-size: 24px;
+    }
+
+    .title h1:nth-child(2) {
+        font-size: 20px;
+    }
+
+    .title h1:nth-child(3) {
+        font-size: 12px;
+    }
+
+    .imgwrap {
+        display: grid;
+        /* Grid 레이아웃 사용 */
+        grid-template-columns: repeat(2, 1fr);
+        /* 3개의 열을 동일한 너비로 설정 */
+        grid-template-rows: repeat(3, auto);
+        /* 2개의 행을 자동 높이로 설정 */
+        gap: 10px;
+        /* 이미지 간 간격 */
+        padding-bottom: 25px;
+        aspect-ratio: 16 / 9;
+    }
+
+    .item h1 {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 24px;
+
+    }
+
+    .pname h2 {
+        font-size: 14px;
+    }
+
+    .game-table th,
+    .game-table td {
+        font-size: 12px;
+    }
+    .game-table1 th,
+    .game-table1 td {
+        font-size: 12px;
+    }
+
+    .desc1 {
+        font-size: 12px;
+    }
+
+    .desc3 {
+        font-size: 12px;
+    }
+
+    #Projects h3 {
+        font-size: 14px;
+    }
+
+    .desc {
+        font-size: 12px;
+    }
+
+    #Projects li {
+        font-size: 12px;
+    }
+
+    .lastwrap p {
+        font-size: 10px;
+    }
+    .gotop {
+        bottom: 100px;
+    }
+}
